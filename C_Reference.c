@@ -8,21 +8,24 @@ A Reference For C Language
 #include <string.h>
 #include <stdint.h>
 
-
-int sum(int *a,int *b){
-    return (*a+*b);
+int sum(int *a, int *b)
+{
+    return (*a + *b);
 }
 
-int factorial(int n) {
-  if (n == 0) {
-    return 1;
-  } else {
-    return n * factorial(n - 1);
-  }
+int factorial(int n)
+{
+    if (n == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return n * factorial(n - 1);
+    }
 }
 
-
-//Global var
+// Global var
 int yy = 5000;
 
 int main()
@@ -123,19 +126,12 @@ int main()
 
     */
 
+    printf("%d\n", factorial(5));
 
-    printf("%d\n",factorial(5));
-
-    //volatile means it can be changed later
-    volatile uint32_t xcv ;
-
-    //cube ide is good for Embedded Systems STM32
-
-
-
-
-
-
+    // volatile means it can be changed later
+    volatile uint32_t xcv;
+    // hello
+    // cube ide is good for Embedded Systems STM32
 
     return 0;
 }
